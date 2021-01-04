@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="https://use.typekit.net/wvi1aaz.css">
+    <style>
+        body {
+            font-family: franklin-gothic-atf, sans-serif;
+            font-weight: 600;
+            color: #ffffff;
+            text-shadow: .2vw .2vw .4vw black;
+        }
+        #bg-grad {
+            background-image: linear-gradient(blue, white)
+        }
+        #main {
+            padding: 2.34375vw;
+            height: 56.25vw;
+            background-image: linear-gradient(#004160, #007eff);
+        }
+        #top-half {
+            display:flex
+        }
+        #weather-icon {
+            margin: auto;
+            width: 23.4375vw;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        #top-left {
+            width: 45.83333333333333vw;
+        }
+        #top-right {
+            line-height: 1.65;
+            font-size: 2.32vw;
+            width: 23.7791667vw;
+        }
+        #city {
+            font-size: 3.7vw;
+        }
+        #date {
+            padding-top: 1vw;
+            font-size: 3.7vw;
+        }
+        #temperature {
+            padding-top: 1vw;
+            font-size: 9.16666666666666667vw;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="top-half">
+            <div id="top-left">
+                <div id="city">
+                    Pittsburgh, Pennsylvania
+                </div>
+                <div id="date">
+                    December 3, 2020
+                </div>
+                <div id="temperature">
+                    125.5°F
+                </div>
+            </div>
+            <div id="weather-icon">
+                <img id="showers" src="assets/showersiconbig.png" alt="Showers">
+            </div>
+            <div id="top-right">
+                Feels Like: 128.8°F
+                Humidity: 100%
+                Pressure: 1012.1 MB
+                Wind: 100 MPH
+                Sunrise: 5:52 AM
+                Sunset: 8:14 PM
+            </div>
+        </div>    
+    </div>
+</body>
