@@ -46,6 +46,77 @@
             padding-top: 1vw;
             font-size: 9.16666666666666667vw;
         }
+        #week-container {
+            padding-top: 10px;
+            height: 28vw;
+            display: flex;
+        }
+        .day-container {
+            flex-basis: 100%;
+            padding: .5vw;
+            font-size: 3.90625vw;
+            text-align: center;
+            text-shadow: .1vw .1vw .2vw black;
+        }
+        .day-border {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            border-style: solid;
+            border-radius: 1vw;
+            background-image: linear-gradient(#3680bd, #729bbd);
+        }
+        .day-top {
+            display:flex;
+            width: inherit;
+            height: 10vw;
+            border-radius: 1vw 1vw 0 0;
+            background-color: #375267;
+        }
+        .day-middle {
+            display: flex;
+            width: inherit;
+            flex-basis: 100%;
+        }
+        .day-bottom {
+            display: flex;
+            width: inherit;
+            flex-basis: 12vw;
+            border-radius: 0 0 1vw 1vw;
+            background-color: #557590;
+            font-size: 2.5vw;
+        }
+        .day-text {
+            width: 100%;
+            height: 100%;
+            vertical-align: middle;
+        }
+        .day-bottom-group {
+            display: flex;
+            flex-wrap: wrap;
+            flex-basis: 100%;
+        }
+        .day-weather-left {
+            display:flex;
+            justify-content: center;
+            flex-basis: 50%;
+        }
+        .day-weather-right {
+            display: flex;
+            justify-content: center;
+            flex-basis: 50%;
+        }
+        .day-hi-temp {
+            display: flex;
+            justify-content: center;
+            flex-basis: 50%
+        }
+        .day-lo-temp {
+            display: flex;
+            justify-content: center;
+            flex-basis: 50%
+        }
     </style>
 </head>
 <body>
@@ -73,6 +144,62 @@
                 Sunrise: 5:52 AM
                 Sunset: 8:14 PM
             </div>
-        </div>    
+        </div>
+        <div id="week-container">
+            <div class="day-container">
+                <div class="day-border">
+                    <div class="day-top">
+                        <div class="day-text">Sun</div>
+                    </div>
+                    <div class="day-middle"></div>
+                    <div class="day-bottom">
+                        <div class="day-bottom-group">
+                            <div class="day-weather-left">
+                                Hi
+                            </div>
+                            <div class="day-weather-right">
+                                Lo
+                            </div>
+                            <div class="day-hi-temp">
+                                125°
+                            </div>
+                            <div class="day-lo-temp">
+                                125°
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="day-container">
+                <div class="day-border">
+                    Sun
+                </div>
+            </div>
+            <div class="day-container">
+                <div class="day-border">
+                    Sun
+                </div>
+            </div>
+            <div class="day-container">
+                <div class="day-border">
+                    Sun
+                </div>
+            </div>
+            <div class="day-container">
+                <div class="day-border">
+                    Sun
+                </div>
+            </div>
+            <div class="day-container">
+                <div class="day-border">
+                    Sun
+                </div>
+            </div>
+            <div class="day-container">
+                <div class="day-border">
+                    Sun
+                </div>
+            </div>
+        </div>
     </div>
 </body>
